@@ -1,9 +1,7 @@
 package br.com.alura.aluvery.ui.screens
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Surface
@@ -18,24 +16,24 @@ import br.com.alura.aluvery.ui.theme.AluveryTheme
 
 @Composable
 fun HomeScreen(
-    sections: Map<String, List<Product>>
+        sections: Map<String, List<Product>>
 ) {
-    Column(
-        Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+    LazyColumn(
+            Modifier
+                    .fillMaxSize(),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+            contentPadding = PaddingValues(vertical = 16.dp)
     ) {
-        Spacer(Modifier)
         for (section in sections) {
             val title = section.key
             val products = section.value
-            ProductsSection(
-                title = title,
-                products = products
-            )
+            item {
+                ProductsSection(
+                        title = title,
+                        products = products
+                )
+            }
         }
-        Spacer(Modifier)
     }
 }
 
