@@ -1,10 +1,8 @@
 package br.com.alura.aluvery.ui.screens
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.runtime.*
@@ -22,9 +20,18 @@ fun HomeScreen(
 ) {
     Column {
         var text by remember { mutableStateOf("") }
-        OutlinedTextField(value = text, onValueChange = { newValue ->
-            text = newValue
-        })
+        OutlinedTextField(
+                value = text,
+                onValueChange = { newValue ->
+                    text = newValue
+                },
+                Modifier
+                        .padding(
+                                start = 16.dp,
+                                top = 16.dp,
+                                end = 16.dp)
+                        .fillMaxWidth(),
+        shape = RoundedCornerShape(100))
         LazyColumn(
                 Modifier
                         .fillMaxSize(),
