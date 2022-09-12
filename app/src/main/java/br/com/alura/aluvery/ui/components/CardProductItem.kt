@@ -23,10 +23,11 @@ import br.com.alura.aluvery.ui.theme.AluveryTheme
 @Composable
 fun CardProductItem(
         product: Product,
+        modifier: Modifier = Modifier,
         elevation: Dp = 4.dp
 ) {
     Card(
-            Modifier
+            modifier
                     .fillMaxWidth()
                     .heightIn(150.dp),
             elevation = elevation
