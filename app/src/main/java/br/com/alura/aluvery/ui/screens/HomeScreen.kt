@@ -30,6 +30,7 @@ fun HomeScreen(
 ) {
     Column {
         var text by remember { mutableStateOf(searchText) }
+
         OutlinedTextField(
                 value = text,
                 onValueChange = { newValue ->
@@ -48,6 +49,20 @@ fun HomeScreen(
         placeholder = {
             Text("O que você procura?")
         })
+        val searchedProducts = remember(text) {
+            if(text.isNotBlank()) {
+                sampleProducts.filter { product ->
+                    product.name.contains(
+                            text,
+                            ignoreCase = true,
+                    ) ||
+                            product.description?.contains(
+                                    text,
+                                    ignoreCase = true,
+                            ) ?: false
+                }
+            } else emptyList()
+        }
         LazyColumn(
                 Modifier
                         .fillMaxSize(),
@@ -66,7 +81,7 @@ fun HomeScreen(
                     }
                 }
             } else {
-                items(sampleProducts) { p ->
+                items(searchedProducts) { p ->
                     CardProductItem(
                             product = p,
                             Modifier.padding(horizontal = 16.dp),
