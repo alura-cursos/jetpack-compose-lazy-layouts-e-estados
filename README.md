@@ -2,34 +2,42 @@
   
 # Aluvery
 
-## 🛠 Projeto em desenvolvimento
-
-<!-- 
+App de entrega de comidas e bebidas em geral.
 
 ## 🔨 Funcionalidades do projeto
 
-Indique quais são as funcionalidades e comportamentos do App
+O Aluvery apresenta um catálogo de produtos variados como comidas, doces, bebidas etc. Também, ele permite realizar pesquisas para buscar produtos desejados a partir de um campo de texto.
 
-Se possível, apresente um exemplo visual do projeto, seja gif, imagens ou vídeo, abaixo segue um exemplo:
-
-![](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/raw/master/img/amostra.gif)
+![sample do App Aluvery](https://user-images.githubusercontent.com/8989346/190243949-783cb73c-65bc-426f-b8e0-cbb8950b7d76.png)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
+Além das técnicas utilizadas na [primeira versão do projeto](https://github.com/alura-cursos/jetpack-compose-criando-um-app), utilizamos as seguintes técnicas e tecnologias:
 
-- `Funcionalidade 1`: descrição da funcionalidade 1
-- `Funcionalidade 2`: descrição da funcionalidade 2
-  - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3
+- `Lazy Layouts`: otimização da performance de implementações de linhas ou colunas com muitos elementos
+- `OutlinedTextField`: implementação do campo de texto com os padrões do Material Design
+- `Gerenciamento de estado`: utilização de estados mutáveis para reagir com as mudanças do campo de texto
+- `Personalização baseado em Slot`: personalização flexível em locais específicos de determinados composables
+- `Apresentação de conteúdo dinâmico`: exploração da técnica para apresentar ou não um conteúdo dependendo do estado
+- `Modifier padrão`: flexibilização para personalizar composables em nível de componentes
+- `Implementação de filtro`: uso consciente de códigos computacionais dentro de composables
+- `State Hoisting`: técnica para reutilizar composables que precisam de gerenciamento de estado permitindo que o invocador seja o responsável pelo estado
 
 ## 📁 Acesso ao projeto
 
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
+Você pode acessar o [código fonte do projeto](https://github.com/alura-cursos/jetpack-compose-lazy-layouts-e-estados/tree/aula-6) ou [baixá-lo](https://github.com/alura-cursos/jetpack-compose-lazy-layouts-e-estados/archive/refs/heads/aula-6.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 
-**Apresente as instruções necessárias para abrir e executar o projeto**
+Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tela de launcher clique em:
+
+- **Open an Existing Project** (ou alguma opção similar)
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Por fim clique em OK
+
+O Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App 🏆
+
+<!-- 
 
 ## 📚 Mais informações do curso
 
