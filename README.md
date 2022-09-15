@@ -10,6 +10,20 @@ O Aluvery apresenta um catálogo de produtos variados como comidas, doces, bebid
 
 ![sample do App Aluvery](https://user-images.githubusercontent.com/8989346/190243949-783cb73c-65bc-426f-b8e0-cbb8950b7d76.png)
 
+## 🎯 Desafios
+
+- Tela todos produtos
+
+![tela-todos-produtos](https://user-images.githubusercontent.com/8989346/190394077-fc3265c7-1439-4825-89a7-660b55ad262d.gif)
+
+[Resultado do desafio](https://github.com/alura-cursos/jetpack-compose-lazy-layouts-e-estados/commit/743d12811bcd7677500dc808a9d0b20924df73df)
+
+- Descrição expandida
+
+![descricao-dinamica](https://user-images.githubusercontent.com/8989346/190394385-baa7c341-ac23-44f5-a325-1ac21ff8110d.gif)
+
+[Resultado do desafio](https://github.com/alura-cursos/jetpack-compose-lazy-layouts-e-estados/commit/ba5be7114a87acc6383236731eee5a02e81cfab1)
+
 ## ✔️ Técnicas e tecnologias utilizadas
 
 Além das técnicas utilizadas na [primeira versão do projeto](https://github.com/alura-cursos/jetpack-compose-criando-um-app), utilizamos as seguintes técnicas e tecnologias:
