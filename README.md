@@ -8,7 +8,7 @@ App de entrega de comidas e bebidas em geral.
 
 O Aluvery apresenta um catálogo de produtos variados como comidas, doces, bebidas etc. Também, ele permite realizar pesquisas para buscar produtos desejados a partir de um campo de texto.
 
-![sample do App Aluvery](https://user-images.githubusercontent.com/8989346/190243949-783cb73c-65bc-426f-b8e0-cbb8950b7d76.png)
+![amostra do Aluvery](https://user-images.githubusercontent.com/8989346/191754098-cd2b5c5c-54b2-4bae-8d92-28f0d4faa924.gif)
 
 ## 🎯 Desafios
 
